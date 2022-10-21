@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+ <head>
+  <link rel="stylesheet" href="webpr_word.css">
+  <meta charset="utf-8">
+  <title>テストページ</title>
+   <p class="al">※このページは 5420051 居関拓也 が作成した<br>日本大学文理学部情報科学科Webプログラミングの演習課題です。※</p>
+ </head>
+
+ <body>
+    <p>ここではhtmlにおける「タグ」を使い方と
+      実行結果とともに３つ紹介します。</p>
+    <!--
+    <pre>
+      <code>
+        &lt br &gt
+        &lt pre &gt
+        &lt code &gt
+      </code>
+    </pre>
+    -->
+    <h2>br</h2>
+    <p>一つ目は br です。これは文章を改行したいときに
+    使用し、開始タグだけで機能します。</p>
+    <p>実際のコードは下のようになります。</p>
+    <pre><code>
+      &ltp&gt
+        この文章は途中で&ltbr&gt改行されます。
+      &lt/p&gt
+    </code></pre>
+    <p>以下がこの実行結果です。</p>
+    <p>この文章は途中で<br>改行されます。</p>
+
+    <h2>pre</h2>
+    <p>二つ目は pre です。これは範囲内の
+      字下げや改行などをそのまま表示させることができます。
+      <br>範囲の開始位置に&ltpre&gtを、終了位置に&lt/pre&gtを置きます。
+    </p>
+    <p>実際のコードは下のようになります。</p>
+    <pre><code>
+      &ltpre&gt
+      １行目
+      　２行目
+      ３行目
+      &lt/pre&gt
+      </code></pre>
+    <p>以下がその実行結果です。</p>
+    <pre>
+      １行目
+      　２行目
+      ３行目
+    </pre>
+
+    <h2>code</h2>
+    <p>最後は code です。これは範囲内の文字が
+       何かのプログラムで、そのまま表示してほしいことを示すものです
+       （そのまま書いておくと誤作動が起こることがあるため）。
+       <br>preと同じように開始位置に&ltcode&gtを、
+       終了位置に&lt/code&gtを置きます。
+       また、preとセットでそのまま表示する時などにも使われます。
+     </p>
+     <p>以下がpreと一緒に使用した実際のコードです。</p>
+     <pre><code>
+       &ltpre&gt&ltcode&gt
+       int main(){
+         int num;
+         scanf("%d\n",&num);
+         printf("%d\n",num);
+         return 0;
+       }
+       &lt/code&gt&lt/pre&gt
+     </code></pre>
+     <p>以下がその実行結果です。</p>
+     <pre><code>
+       int main(){
+         int num;
+         scanf("%d\n",&num);
+         printf("%d\n"num);
+         return 0;
+       }
+     </code></pre>
+
+　　 <h3>余談</h3>
+     <p>このページにもbr pre code とコメントを示すタグが使われています。<br>
+     気が向いたら探してみてください。</p>
+
+ </body>
+</html>

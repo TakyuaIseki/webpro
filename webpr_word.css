@@ -1,0 +1,21 @@
+.al{
+  width: 30%;
+  color: white;
+  background-color: rgb(256,0,0);
+}
+
+h2{
+  width: 10%;
+  background-color: aqua;
+  color: blue;
+}
+
+h3{
+  width: 10%;
+  background-color: gray;
+  color: aqua;
+}
+
+body{
+  background-color: #ffffe0;
+}
